@@ -1,10 +1,7 @@
 import random
 
 print("Türkçe Komut Yapay Zekasına Hoşgeldiniz. Sİsteme yönlendiriliyorsunuz.")
-onof = ["online", "ofline"]
-onofsecim = random.choice(onof)
-
-if onofsecim == "online":
+def System1():
     kod = input("Çalıştırılacak Kod: ")
     #Print Command
     if kod == "print":
@@ -30,10 +27,6 @@ if onofsecim == "online":
         }
         print(degisken)
 
-
-if onofsecim == "offline":
-    print("Yapay zeka'ya bağlanılamadı.")
-
 while True:
     bilgilendirme = input("""
     Yapay zekanın çalıştırabildiği komutlar:\n
@@ -43,25 +36,25 @@ while True:
     Not: Eğer yapacağınız işlemden çıkmak istiyorsanız: 'stop' yazınız.
     Bu Seçenekler Hakkında Bilgi Almak istediğiniz rakamı giriniz: """)
     if bilgilendirme == "stop":
-    print("İşlemden Çıkıldı..\n\n")
-    turkceSystem()
+        print("İşlemden Çıkıldı..\n\n")
+        System1()
     elif bilgilendirme == "1":
-    print("""
-    Print Komutunun Kullanımı:\n
-    Öncelikle Kod Bölümüne; 'print' yazmanız gerek,
-    Sonrasında İçerik kısmına; kodun göstereceği metni yazacaksınız.
-    """)
+        print("""
+        Print Komutunun Kullanımı:\n
+        Öncelikle Kod Bölümüne; 'print' yazmanız gerek,
+        Sonrasında İçerik kısmına; kodun göstereceği metni yazacaksınız.
+        """)
     elif bilgilendirme == "2":
-    print("""
-    İnput Komutunun Kullanımı:\n
-    Öncelikle Kod Bölümüne; 'input' yazmanız gerek,
-    Sonrasında İçerik kısmına; kodun isteyeceği değeri yazacaksınız.
-    """)
+        print("""
+        İnput Komutunun Kullanımı:\n
+        Öncelikle Kod Bölümüne; 'input' yazmanız gerek,
+        Sonrasında İçerik kısmına; kodun isteyeceği değeri yazacaksınız.
+        """)
     elif bilgilendirme == "3":
-    print("""
-    Değişken Oluşturma:\n
-    Öncelikle Kod Bölümüne; 'degisken' yazmanız gerek,
-    Sonrasında icerik kısmına; değişkeninizin adını yazacaksınız.
-    """)
+        print("""
+        Değişken Oluşturma:\n
+        Öncelikle Kod Bölümüne; 'degisken' yazmanız gerek,
+        Sonrasında icerik kısmına; değişkeninizin adını yazacaksınız.
+        """)
     else:
-    print("\n\Hata ❗ Hata Numarası: {}\n".format(random.randint(1, 157)))
+        print("\n\Hata ❗ Hata Numarası: {}\n".format(random.randint(1, 157)))
