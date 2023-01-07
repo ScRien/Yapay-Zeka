@@ -1,5 +1,5 @@
 # Yapay-Zeka
-Python ile komutları algılayabilen bir yapay zeka programı
+Python ile komutları algılayıp, yazabilen bir yapay zeka programı
 
 NOT:
 Kodlarda bazı hatalar farkedilmiştir! Bu Nedenle Farklı Dil Seçeneği Kaldırılmıştır!
